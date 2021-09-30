@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/images/kcMnkqXgi.png"/>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Weather Dashboard</h1>
+          <p class="lead">Search for a city below to see today's forecast.</p>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Search for a City</h5>
+          <form id="city-form" class="form-inline my-2 my-lg-0">
+            <input name="city" id="city" type="text" autofocus="true" class="card-text form-input" placeholder="Minneapolis"/>
+            <button id="searchBtn" type="submit" class="btn btn-primary col-12 my-3">Search</button>
+            </form>
+        </div>
+      </div>
+
+      <div id="searched-cities-container">
+      </div>
+
+      <div id="city-container">
+      </div>
+
+      <div id="five-day-forecast-container">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
