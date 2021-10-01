@@ -5,6 +5,7 @@ var searchBtn = $("#searchBtn");
 var searchedCitiesContainer = $("#searched-cities-container");
 var cityContainer = $("#city-container");
 var fiveDayForecastContainer = $("#five-day-forecast-container");
+var searchedCities = [];
 
 searchBtn.on("click", function formSubmitHandler(event){
     event.preventDefault();
@@ -12,6 +13,7 @@ searchBtn.on("click", function formSubmitHandler(event){
 
     if (city) {
       getCity(city);
+      addCity(city);
   
     } else {
       alert('Please enter a city name');
@@ -83,5 +85,28 @@ function displayCityData(data){
     $("#wind").empty().append("Wind: " + wind + " MPH");
     $("#temp").empty().append("Temp: " + temp + "°F");
 }
+
+function addCity(city){
+    var currentCities = JSON.parse(localStorage.getItem("allCities")) || [];
+
+    if (!currentCities.includes(city)){
+        localStorage.setItem("allCities", JSON.stringify(city));
+        currentCities.push(city);
+        localStorage.setItem("allCities", JSON.stringify(currentCities));   
+    }
+
+
+
+    // //NEXT STEPS HERE
+    // var cityBtns = $();
+    // $("#searched-cities-container").prepend(cityBtns);
+
+};
+
+
+
+
+
+
 
 
