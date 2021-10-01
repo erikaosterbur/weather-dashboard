@@ -18,25 +18,43 @@
         </div>
     </div>
 
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Search for a City</h5>
-          <form id="city-form" class="form-inline my-2 my-lg-0">
-            <input name="city" id="city" type="text" autofocus="true" class="card-text form-input" placeholder="Minneapolis"/>
-            <button id="searchBtn" type="submit" class="btn btn-primary col-12 my-3">Search</button>
-            </form>
-        </div>
-      </div>
+    <main class="container">
+        <section class="row">
+            <div class="col-12 col-md-12 col-lg-4 mb-3">
+                <div class="card">
+                    <div class="card-body" style="width: 18rem;">
+                            <h5 class="card-title d-flex justify-content-center">Search for a City</h5>
+                            <form id="city-form" class="form-inline my-2 my-lg-0 d-flex justify-content-center">
+                                <input name="city" id="city" type="text" autofocus="true" class="card-text form-input" placeholder="Minneapolis"/>
+                                <button id="searchBtn" type="submit" class="btn btn-primary col-12 my-3">Search</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+            <div id="city-container" class="col-12 col-md-12 col-lg-8 mb-3">
+                <div class="card p-4">
+                    <div id="icon"><img id="wicon" src="" alt="Weather icon"><h2 id="city-title"></h2></div>
+                    <div>
+                        <h3 id="temp"></h3>
+                        <h3 id="wind"></h3>
+                        <h3 id="humidity"></h3>
+                        <h3 id="uv-index"></h3>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div id="searched-cities-container">
-      </div>
+        <section class="row">
+            <div id="five-day-forecast-container" class="card">
+            </div>
+        </section>
 
-      <div id="city-container">
-      </div>
+        <section class="row">
+            <div id="searched-cities-container" class="card">
+            </div>
+        </section>
 
-      <div id="five-day-forecast-container">
-      </div>
-
+    </main>
 
 
 
@@ -55,6 +73,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

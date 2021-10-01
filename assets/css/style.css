@@ -1,4 +1,8 @@
-body div {
-    margin: 40px;
 
+body h2 {
+    text-transform: uppercase;
+}
+
+#city-container {
+    display: none;
 }
