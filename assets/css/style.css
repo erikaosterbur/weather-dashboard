@@ -6,3 +6,20 @@ body h2 {
 #city-container {
     display: none;
 }
+
+#cards {
+    color: white;
+    background-color: rgb(6, 54, 83);
+}
+
+.favorable {
+    background-color: green;
+}
+
+.moderate {
+    background-color: yellow;
+}
+
+.severe {
+    background: red;
+}
