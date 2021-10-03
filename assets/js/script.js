@@ -249,7 +249,3 @@ function displayFiveDay5(data){
   $("#wind-5").empty().append("Wind: " + wind5 + " MPH");
   $("#temp-5").empty().append("Temp: " + temp5 + "°F");
 }
-
-
-
-
