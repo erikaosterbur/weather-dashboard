@@ -6,7 +6,7 @@ Create a weather dashboard that displays the weather for a searched city. The we
 
 ## Screenshot 
 
-![Weather dashboard that displays search bar, weather for city searched along with a five day forecast, and a history of searched cities as clickable buttons.](./assets/images/weather-dashboard-screenshot.png)
+![Weather dashboard that displays search bar, weather for city searched along with a five day forecast, and a history of searched cities as clickable buttons.](./assets/images/screenshot-weather.png)
 
 ## Link to Deployed Page
 

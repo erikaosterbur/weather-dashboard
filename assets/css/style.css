@@ -44,3 +44,9 @@ body h2 {
 .severe {
     background: red;
 }
+
+@media  screen and (max-width: 540px) {
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+}
