@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <div style="background: rgb(83, 128, 134)" class="jumbotron jumbotron-fluid">
+    <div style="background-image: url(https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80); background-size: 100%;" class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 style="color: whitesmoke" class="display-4">Weather Dashboard</h1>
-          <p style="color: rgb(41, 39, 39); font-weight: bold;" class="lead">Search for a city below to see today's forecast</p>
+          <h1 style="color: rgb(5, 5, 5)" class="display-4 m-5"><span style="background-color: whitesmoke; padding: 10px; border: 2px solid whitesmoke; border-radius: 5px;">Weather Dashboard</span></h1>
+          <p style="color: rgb(41, 39, 39); font-weight: bold;" class="lead"><span style="background-color: whitesmoke; padding: 10px; border: 2px solid whitesmoke; border-radius: 5px;">Search for a city below to see today's forecast</span></p>
         </div>
     </div>
 
@@ -26,7 +26,7 @@
                             <h5 class="card-title d-flex justify-content-center">Search for a City</h5>
                             <form id="city-form" class="form-inline my-2 my-lg-0 d-flex justify-content-center">
                                 <input name="city" id="city" type="text" autofocus="true" class="card-text form-input" placeholder="Minneapolis"/>
-                                <button id="searchBtn" type="submit" class="btn btn-primary col-12 my-3">Search</button>
+                                <button id="searchBtn" type="submit" class="btn col-12 my-3 search-btn">Search</button>
                             </form>
                     </div>
                 </div>
@@ -44,8 +44,6 @@
                     </div>
                 </div>
             </div>
-            
-
             <div id="five-day-forecast-container" class="row col-12 col-md-6 col-lg-12">
                 <h4 class="col-12 col-md-12 col-lg-12">Five Day Forecast</h4>
                 <div id="cards" class="card col-12 col-md-12 col-lg-2 p-4 m-2">

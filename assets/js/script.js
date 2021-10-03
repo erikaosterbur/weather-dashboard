@@ -16,7 +16,7 @@ $(document).ready (function() {
 //displays previously searched-for city buttons to the page and click function
 function setCityBtns(){
   for (var i = 0; i < currentCities.length; i++){
-    var cityBtns = $('<button type="button" class="btn btn-info btn-lg my-2">'+ currentCities[i] + '</button>');
+    var cityBtns = $('<button type="button" class="btn btn-lg my-2 searched-btns">'+ currentCities[i] + '</button>');
     cityBtns.on("click", function(){
       var city = $(this).text();
       getCity(city);
@@ -249,3 +249,10 @@ function displayFiveDay5(data){
   $("#wind-5").empty().append("Wind: " + wind5 + " MPH");
   $("#temp-5").empty().append("Temp: " + temp5 + "°F");
 }
+
+
+
+
+
+
+

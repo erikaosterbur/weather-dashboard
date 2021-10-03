@@ -3,13 +3,34 @@ body h2 {
     text-transform: uppercase;
 }
 
+.search-btn {
+    background-color: rgb(160, 65, 1);
+    border:rgb(160, 65, 1);
+    color: white;
+}
+
+.search-btn:hover {
+    background-color:  rgb(165, 102, 8);
+    color: white;
+}
+
+.searched-btns {
+    background-color: rgb(116, 71, 5);
+    color: white;
+}
+
+.searched-btns:hover {
+    background-color: rgb(165, 102, 8);
+    color: white;
+}
+
 #city-container {
     display: none;
 }
 
 #cards {
     color: white;
-    background-color: rgb(6, 54, 83);
+    background-color: rgb(83, 21, 6);
 }
 
 .favorable {
