@@ -39,7 +39,7 @@ searchBtn.on("click", function formSubmitHandler(event){
 
     // gets lattitude & longitude coordinates and plugs them into the next function
   function getCity(city){
-    var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIkey;
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIkey;
     fetch(queryURL)
     .then(function(response){
       if (response.ok) {
@@ -93,7 +93,7 @@ function displayCityData(data, city){
 
     //inserts weather icon 
     var iconCode = data.current.weather[0].icon;
-    var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
+    var iconURL = "https://openweathermap.org/img/w/" + iconCode + ".png";
     $('#wicon').attr('src', iconURL);
     
     //gets current weather info from API
