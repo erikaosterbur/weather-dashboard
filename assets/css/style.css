@@ -45,8 +45,16 @@ body h2 {
     background: red;
 }
 
-@media  screen and (max-width: 540px) {
+@media  screen and (max-width: 375px) {
     .jumbotron h1 {
-        font-size: 35px;
+        margin: 5px;
+        font-size:small;
+    }
+    .jumbotron p {
+        font-size:x-small;
+    }
+    .jumbotron image {
+        background-size: cover;
+        height: 100%;
     }
 }
