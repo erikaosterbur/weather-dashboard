@@ -1,4 +1,4 @@
-# Homework 6 - Weather Dashboard
+# Weather Dashboard
 
 ## Objectives
 
